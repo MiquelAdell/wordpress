@@ -1,4 +1,5 @@
 FROM wordpress
 MAINTAINER Miquel Adell <miquel@miqueladell.com>
 
-RUN sed '/WP_DEBUG/ r wp-config.custom.php' wp-config.php > tmp && mv tmp wp-config.php
+COPY docker-wp-config.custom.php.sh /var/www/html/wp-config.custom.php
+RUN sed '/WP_DEBUG/ r /var/www/html/wp-config.custom.php' /var/www/html/wp-config.php > /var/www/html/tmp && mv /var/www/html/tmp /var/www/html/wp-config.php
