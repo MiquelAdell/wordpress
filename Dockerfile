@@ -1,3 +1,5 @@
+LABEL version="0.1.0"
+
 FROM wordpress
 MAINTAINER Miquel Adell <miquel@miqueladell.com>
 
