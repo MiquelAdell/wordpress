@@ -9,4 +9,5 @@ ONBUILD RUN sed '/WP_DEBUG/ r /var/www/html/wp-config.custom.php' /var/www/html/
     mv /var/www/html/tmp /var/www/html/wp-config.php
 
 
+
 ONBUILD RUN rm /var/www/html/wp-config.custom.php
