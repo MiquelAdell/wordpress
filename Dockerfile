@@ -1,4 +1,4 @@
-FROM wordpress
+FROM wordpress:4.4
 LABEL version="0.1.1"
 MAINTAINER Miquel Adell <miquel@miqueladell.com>
 
