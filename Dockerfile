@@ -1,5 +1,5 @@
 FROM wordpress:4.4
-LABEL version="0.1.1"
+LABEL version="0.1.2"
 MAINTAINER Miquel Adell <miquel@miqueladell.com>
 
 ONBUILD COPY docker-wp-config.custom.php /var/www/html/wp-config.custom.php
